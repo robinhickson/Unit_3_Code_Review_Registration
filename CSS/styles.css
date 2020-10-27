@@ -1,0 +1,192 @@
+* {box-sizing: border-box;}
+
+
+body {
+    background:  whitesmoke;
+    color:#3f3f3f;
+    font-family: 'Kufam', cursive;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h4 {
+    margin: 0;
+    padding:0;
+}
+
+.container {
+    display:flex;
+    
+    flex-flow: column nowrap;
+    margin: 0em auto;
+    align-items: center;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+    border: none;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+
+#logo, button {
+    background: linear-gradient(#000, #3f3f3f 90%, #c0c0c0 95%);
+    color: #f5f5f5;
+    text-align: center;
+    width: 90%;
+}
+
+
+button:hover {
+    box-shadow: rgba(16, 19, 17, 0.3) 5px 2px ;
+    background: #11f31d;
+    color: whitesmoke;
+}
+
+button:focus {
+    outline: 1px solid #09f;
+
+}
+
+
+#intro{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 90%; 
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.75em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+label {
+   
+    float:left;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+   }
+
+input{
+    float:left;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    background-color:#c0c0c0;
+    min-height: 3em;
+    
+}
+
+input:required:hover,
+select:required:hover,
+input:required:focus,
+select:required:focus {
+    border: 3px solid red;
+    outline: none;
+  }
+  
+
+input:focus, textarea:focus {
+    outline: 3px solid #09f;
+}
+
+input:hover, textarea:hover {
+    box-shadow: rgba(16, 19, 17, 0.5) 2px 2px 5px inset;
+}
+
+.hint {
+    font-size: 0.75em;
+  
+} 
+
+.hint:first-of-type {
+    border: 1px solid red;
+} 
+
+textarea {
+    height: 50px;
+    width: 100%
+}
+
+button {
+    width: 90%;
+    
+    padding: 12px 0;
+    
+    border: none;
+    border-radius: 10px;
+    margin: 1.5rem auto 2.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.decoration{
+    height: 1em;
+    border-bottom: #3f3f3f solid 1px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3 ~ .decoration{
+    height: 1em;
+    border-top: #3f3f3f solid 3px;
+    border-bottom: #3f3f3f solid 1px;
+    width: 100%;
+}
+
+.inline{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row-reverse nowrap;
+    align-items:baseline;
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.response{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media all and (min-width: 768px){
+    .response{
+        flex-flow: row nowrap;
+        align-items: baseline;
+            
+    }
+    
+    .response>input, .response>select, .response>textarea{
+       flex: 2;
+    }
+
+    .response>label{
+       flex: 1;
+       
+    }
+
+    legend{
+        padding-top:2em;
+        font-size: 1em;
+          }
+
+    h4{
+    font-size: 0.75em;
+        }
+
+    textarea{
+        max-width: 600px;
+    }
+}
