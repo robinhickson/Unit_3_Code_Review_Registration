@@ -42,7 +42,7 @@
                     </legend>
                     <p class="hint">* asterix/red frame is required field</p>
                     <div class="response">
-                        <label for="name">Name: *</label>
+                        <label for="name">Full Name: *</label>
                         <input type="text" id="name" name="user-name" placeholder="Required: your full name" required>
                     </div>
                     <div class="response">
@@ -75,8 +75,8 @@
                     <div class="response">
                         <label for="country">Country: *</label>
                         <select id="country" name="country" required>
-                            <option value="">Please select an option</option>
-                            <optgroup>
+                            <option value="">Required: please select an option</option>
+                            <optgroup label="Most common">
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="United States">United States</option>
                             </optgroup>
@@ -367,8 +367,8 @@
                         <label for="format_txt">Plain text</label>
                         <input type="radio" id="format_txt" name="user_format">
                     </div>
-                    <label for="topics">
-                        <h4>Other topics you would like to hear about:</h4>
+                    <label class="hint" for="topics">
+                        Other topics you would like to hear about:
                     </label>
                     <textarea name="user_topics" id="topics" class="message"
                         placeholder="Other topics (not required)"></textarea>
@@ -387,9 +387,11 @@
 
         </div>
     </main>
-
+    <footer>
+        <i class="fas fa-copyright"></i>&nbsp;The Code Review
+    </footer>
 </body>
 
-<footer class="code_review"><i class="fas fa-copyright"></i>&nbsp;The Code Review</footer>
+
 
 </html>
