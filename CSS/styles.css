@@ -110,8 +110,16 @@ select:required:focus {
   
 /* Basic input highlight effects */
 
-input:focus, textarea:focus {
+input, textarea, select{
+    transition: transform 1s;
+
+}
+
+input:focus, textarea:focus, select:focus {
     outline: 3px solid #09f;
+    transform: scale(1.1);
+    
+
 }
 
 input:hover, textarea:hover {
