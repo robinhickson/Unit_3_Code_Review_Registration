@@ -118,8 +118,6 @@ input, textarea, select{
 input:focus, textarea:focus, select:focus {
     outline: 3px solid #09f;
     transform: scale(1.1);
-    
-
 }
 
 input:hover, textarea:hover {
@@ -186,6 +184,10 @@ h3 ~ .decoration{
     flex-flow: column nowrap;
 }
 
+        /* Unique style for postal code */
+        .postal>input{
+            max-width: 33.33%;
+        }
 
 
 /* Media query for screens > 767px - align labels and inputs, modify font sizes */
@@ -194,7 +196,7 @@ h3 ~ .decoration{
     .response{
         flex-flow: row nowrap;
         align-items: baseline;
-            
+         
     }
     
     .response>input, .response>select, .response>textarea{
@@ -203,8 +205,27 @@ h3 ~ .decoration{
 
     .response>label{
        flex: 1;
-       
     }
+
+    .response.postal{
+        flex-wrap: nowrap;
+        justify-content: normal;
+    }
+
+    .response.postal>label{
+        flex: 1;
+    }
+    .response.postal>input{
+        flex: 1;
+    }
+
+    .response.postal>div{
+        flex: 1;
+    }
+
+   
+
+
 
     legend{
         padding-top:2em;

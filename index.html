@@ -63,15 +63,11 @@
                         <label for="address3">Town:</label>
                         <input type="text" id="address3" name="user_address3" placeholder="e.g. Amsterdam">
                     </div>
-                    <div class="response">
+                    <div class="response postal">
                         <label for="post_code">Postal Code:</label>
-                        <input type="text" id="post_code" name="user_post_code" placeholder="Valid postal or zip code">
+                        <input type="text" id="post_code" name="user_post_code" placeholder="Valid postcode">
+                        <div class="third"></div>
                     </div>
-                    <div class="response">
-                        <label for="phone">Phone number:</label>
-                        <input type="tel" id="phone" name="user_phone" placeholder="Please include area code">
-                    </div>
-
                     <div class="response">
                         <label for="country">Country: *</label>
                         <select id="country" name="country" required>
@@ -334,6 +330,10 @@
                     <p class="hint">We require your country selection in order to satisfy various data privacy
                         requirements
                     </p>
+                    <div class="response">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="Please include area code">
+                    </div>
 
                     <div class="response"><label for="contact_message">Message area:</label>
                         <textarea name="user_contact_message" id="contact_message" class="message"
