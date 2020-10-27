@@ -2,4 +2,4 @@
 Techtree FWD Project 3
 
 
-Final responsive version before validation and other checks
+All validation complete; HTML, CSS and Lighthouse (100%)
